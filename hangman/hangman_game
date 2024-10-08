@@ -1,0 +1,63 @@
+import hangman_module 
+
+
+def hangman_game():
+
+    # Get the random word calling module function get_word
+    guessing_word = hangman_module.get_word()
+    
+   
+    guessed_letters = []
+    attemptsmade = 0
+
+    # get the maximum attempts allowed
+    maxAttemps = hangman_module.MaxAttemptsAllowed
+    print("let's play a game!")
+    
+    # final status of word identified
+    isIdentified = False
+
+    # till the maximum attempts reached, ask user to give it try
+    while(attemptsmade < maxAttemps):
+
+        # ask user to enter a character
+        guessedChar = input ("Enter a letter: ").lower()
+
+        # check if entered character is a alphabet
+        if len(guessedChar) == 1 and guessedChar.isalpha():
+            
+            # collect all the characters that user entered
+            guessed_letters.append(guessedChar)
+
+            # call the module function to see if the user guessed any of the character from the guessing word
+            resultWord = hangman_module.IdentifyMissingLetters(guessing_word, guessed_letters)
+
+            # checking if guessing word matches all the characters
+            if(resultWord == guessing_word):
+                #set the final status as identified
+                isIdentified = True
+                print("Congrats!!!. You guessed it correctly.")
+                break
+            else:
+                print("Update word :" +  resultWord)
+            
+            # if charcter entered by user doesn't match any of the character in the word
+            if(guessedChar not in guessing_word):
+                    # increase the attempt made
+                    attemptsmade = attemptsmade + 1               
+                    print(f"You have only  {(maxAttemps - attemptsmade)}  attempts left. Try again")
+
+        else:
+            print("Invaalid input, please enter a single letter.")
+    
+    # if user did not identify the word and ran out of trials, display the word.
+    if(not isIdentified):
+        print("You ran out of your trials. The word to guess was " + guessing_word)
+        
+    
+        
+      
+hangman_game()
+
+
+
