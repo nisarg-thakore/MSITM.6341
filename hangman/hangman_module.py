@@ -1,5 +1,5 @@
 #  write code as a module accepting word and guessed letters
-# This example code for hangman game 
+# This example code for hangman game onto sushma_practice_1
 import random
 # return the word
 

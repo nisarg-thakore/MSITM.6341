@@ -1,6 +1,6 @@
 import hangman_module 
 
-# This is the main program for hangman -onto different branch
+# This is the main program for hangman -onto sushma_practice_1 
 def hangman_game():
 
     # Get the random word calling module function get_word
