@@ -1,6 +1,6 @@
 import hangman_module 
 
-
+# This is the main program for hangman 
 def hangman_game():
 
     # Get the random word calling module function get_word
