@@ -1,64 +1,56 @@
 # In-Class Exercises
 
 # 1. Define and Print Variables
-name = "Alice"
-age = 25
-is_student = True
-print(f"My name is {name}, I am {age} years old, and student status: {is_student}.")
+# Define two variables, string and num, and assign them proper values.
+# Print a sentence containing the two variables.
+
 
 # 2. User Input and Data Conversion
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
-print(f"The product is {num1 * num2}.")
+# Take two numbers as input from the user.
+# Convert the numbers to integers and print their sum.
+
 
 # 3. Identify Data Types
-print(type(123))      # int
-print(type("hello"))  # str
-print(type(3.14))     # float
-print(type(True))     # bool
+# Define variables of different data types (int, float, string, boolean).
+# Print the data types of the variables.
+
 
 # 4. Perform Arithmetic Operations
-length = float(input("Enter the length: "))
-width = float(input("Enter the width: "))
-print(f"Area of the rectangle: {length * width}")
+# Take two numbers as input from the user.
+# Perform addition, subtraction, multiplication, division, and modulus operations on the numbers.
+
 
 # 5. Conditional Logic
-num = int(input("Enter a number: "))
-if num > 0:
-    print("Positive")
-elif num < 0:
-    print("Negative")
-else:
-    print("Zero")
+# Take a number as input from the user.
+# If the number is positive, print "Positive".
+# If the number is negative, print "Negative".
+# If the number is zero, print "Zero".
+
 
 # 6. Even or Odd
-num = int(input("Enter a number: "))
-if num % 2 == 0:
-    print("Even")
-else:
-    print("Odd")
+# Take a number as input from the user.
+# If the number is even, print "Even".
+# If the number is odd, print "Odd".
+# Hint: Use the modulus operator (%).
+
 
 # 7. For Loop with Range
-for i in range(1, 11):
-    print(i)
+# Print numbers from 1 to 5 using a for loop and the range function.
+
 
 # 8. Factorial with While Loop
-num = int(input("Enter a number: "))
-factorial = 1
-while num > 1:
-    factorial *= num
-    num -= 1
-print(f"Factorial: {factorial}")
+# Take a number as input from the user.
+# Calculate the factorial of the number using a while loop.
+# Print the factorial.
+
 
 # 9. Function to Add Numbers
-def add_numbers(a, b):
-    return a + b
+# Define a function that takes two numbers as input and returns their sum.
+# Call the function with two numbers and print the result.
 
-print(add_numbers(5, 10))
 
 # 10. Function with Default Arguments
-def greet(name="Guest"):
-    print(f"Hello, {name}!")
+# Define a function that takes a name as input and returns a greeting message.
+# The function should have a default argument "Guest".
+# Call the function with and without an argument and print the messages.
 
-greet()         # Hello, Guest!
-greet("Alice")  # Hello, Alice!

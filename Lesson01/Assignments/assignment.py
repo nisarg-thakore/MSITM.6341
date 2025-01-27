@@ -6,6 +6,8 @@
 # 2. Perform the operation based on the operator.
 # 3. Print the result.
 
+
+
 # 2. Area of a Rectangle
 # Write a program that takes the length and width of a rectangle as input and calculates the area of the rectangle.
 
